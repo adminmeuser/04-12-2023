@@ -1,0 +1,24 @@
+.bx-main {
+    
+    background-color: rgb(199, 221, 240);
+    padding: 10px;
+    margin: 10px;
+}
+
+form {
+    padding: 10px;
+}
+input {
+    height: 30px;
+}
+input:hover {
+    background-color:bisque;
+}
+button { 
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: cornflowerblue;
+}

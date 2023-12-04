@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./fetch.component.scss">
+    </head>
+    <body>
+       <div class="bx-main">
+         <!-- <button (click)="getAllDetails()">Get All Details</button>
+
+         <div *ngFor="let detail of detailsList">
+              {{ detail.id }} - {{ detail.name }} - {{ detail.age }} - {{ detail.email }} - {{ detail.address }}
+         </div>
+
+         <label for="userId">User ID:</label>
+         <input type="number" id="userId" [(ngModel)]="userId">
+
+         <button (click)="getDetailsById()">Get Details by ID</button>
+
+         <div *ngIf="selectedDetail">
+              {{ selectedDetail.id }} - {{ selectedDetail.name }} - {{ selectedDetail.age }} - {{ selectedDetail.email }} - {{ selectedDetail.address }}
+         </div> -->
+
+         
+            <h2>List of Items</h2>
+          
+            <ul>
+              <li *ngFor="let item of items">
+                {{ item | json }}<br><br>
+                <button (click)="deleteItem(item.id)">Delete</button>
+                <button (click)="updateItem(item.id, updatedData)">Update</button>
+                <button (click)="patchItem(item.id, updatedData)">Patch</button><br><br>
+              </li>
+            </ul>
+          
+
+
+        
+        </div>
+    </body>
+</html>
